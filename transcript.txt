@@ -1,0 +1,2901 @@
+
+00:00
+welcome back to the profitable Python
+00:03
+I'm your host Ben McNeal and on this
+00:05
+episode you will meet alexei gribov
+00:09
+alexei lives in berlin with his wife and
+00:12
+son by trade he's a software engineer
+00:14
+with a focus on machine learning he
+00:17
+works at OLX group as a lead data
+00:20
+scientist and some cool facts about
+00:22
+alexei our he's a kegel master he wrote
+00:26
+a couple of books one of them called
+00:28
+mastering Java for data science and the
+00:31
+other one he's working on right now
+00:33
+called machine learning book camp and
+00:36
+that's not a typo it's called book camp
+00:38
+which was recently recently released as
+00:42
+a MEAP
+00:43
+so Alexey welcome to the show pleasure
+00:46
+to be here
+00:46
+yes yeah glad to have you and one of the
+00:50
+first things I want to talk about was
+00:52
+for those of you that don't know what a
+00:54
+MEAP is it's early access to the book
+00:57
+can you can you talk about like the
+00:59
+benefits that your readers get by
+01:00
+signing up for the meet right now yeah
+01:34
+the and I think there's like three
+01:36
+chapters you can just jump into right
+01:38
+now cool and this is all machine
+01:53
+learning hands-on like like zero to hero
+01:57
+type stuff get your hands super dirty
+01:59
+with machine learning
+02:03
+uh-oh go ahead item in unison yes so the
+02:06
+idea is to to learn by doing solar
+02:10
+machine learning by doing projects and
+02:13
+every chapter is a new new project where
+02:17
+you trying to understand what is data
+02:21
+set about then machine learning model
+02:26
+trying to to understand what's going on
+02:29
+inside the model
+02:30
+so how long does it make relations what
+02:32
+is the how we can use this out pretty
+02:36
+hands-on so I try to keep the theory to
+02:38
+minimum but sometimes it's not really
+02:41
+possible because and machine learning is
+02:44
+supplied with medics
+02:45
+so they steal the formula or two here
+02:48
+and there but the focus is pretty much
+02:52
+get the awesome and I think like the
+02:59
+last little nugget that I wanted to just
+03:01
+prompt you with here was all these
+03:03
+projects are basically designed for
+03:05
+somebody to go through and have a
+03:08
+portfolio of machine learning like a
+03:12
+body of work that they can go on to it's
+03:15
+kind of catered to like getting a job in
+03:17
+the industry right they don't know I was
+03:30
+doing it so they can already code you
+03:37
+can just do projects cool yeah I'm
+03:52
+excited to see how that progresses okay
+03:56
+so when it comes or when machine
+03:59
+learning becomes fully commoditized what
+04:02
+will be the areas that software
+04:04
+engineers will need to specialize in
+04:06
+because the what the jobs that we're
+04:08
+applying for right now like might not
+04:10
+even it might not even be a thing right
+04:14
+yeah so that's actually indeed a trend
+04:19
+that machine learning becomes simpler to
+04:23
+to enter for people who can code so
+04:28
+right now there are so many libraries
+04:29
+where you don't need to know all this
+04:32
+mathematics you can just take some
+04:34
+off-the-shelf solution and just use it
+04:37
+one thing is library but there is this
+04:40
+software as service providers where you
+04:43
+can just throw in a data set and then it
+04:45
+will give you so that's pretty cool
+04:49
+but I don't think it will anyhow make
+04:54
+the jobs all data scientist or machine
+04:57
+learning engineers go away because I
+05:00
+think it just helps them because this
+05:02
+process of training and models sometimes
+05:03
+is to use so you need to try to come up
+05:07
+with the best parameters and things like
+05:09
+this and just makes a lot of you just
+05:12
+give it a later and then keeps back
+05:15
+tomorrow still there are so many things
+05:17
+around even before then you get the data
+05:28
+and you prepare that then you can use
+05:31
+either this service or use a library to
+05:36
+train the model and there is a lot of
+05:38
+work after you have tomorrow you need to
+05:41
+get the models and make it available for
+05:44
+others to consume or integrated services
+05:47
+and then actually make these models
+05:51
+useful so that's a lot of things that
+05:55
+are not covered by this boxes blank
+05:59
+boxes where I'll just throw in beta and
+06:01
+get model so there's a lot of things
+06:03
+around so I am pretty sure the I have
+06:08
+job security right now was a data
+06:10
+scientist because these things are not
+06:12
+going to be maybe one little step is
+06:18
+buttressed
+06:21
+unlikely so we still need people to
+06:24
+actually do these things
+06:25
+and many things that these things
+06:30
+downtown to link is like as I said some
+06:34
+negative things so something that it's
+06:36
+fun to do a few times but then if you do
+06:38
+it for the tenth time or twenty times
+06:41
+she's actually will think that we have
+06:43
+these tools now too
+06:47
+okay and if I'm hearing you correctly
+06:50
+maybe some areas like if you're not
+06:53
+aware of the landscape that that's kind
+06:56
+of out there in order to be an effective
+06:58
+machine learning professional working
+07:01
+with models and production and that sort
+07:03
+of thing like it is it does it make
+07:05
+sense for that person to basically maybe
+07:09
+focus a little less on like particular
+07:13
+models because we have the auto ml's and
+07:16
+and maybe focus more on like learning
+07:19
+about the the the business and also like
+07:23
+running things in production is there
+07:26
+like special knowledge that you
+07:29
+recommend that we kind of get by running
+07:32
+in production or machine learning models
+07:36
+in production learning so you learn by
+08:32
+just going live and seen
+08:36
+trying to tweak it so it doesn't go down
+08:38
+on a million users and toothpaste this
+08:45
+is more like traditional software
+08:48
+engineering work the only welcome Ashley
+08:52
+Lincoln went there it's just service
+08:54
+yourself is emotion during stories
+08:57
+tomorrow still need to learn a lot about
+09:00
+like how your service should be able to
+09:04
+sustain this particular workload of
+09:08
+traffic that your users okay yeah thanks
+09:15
+for sharing that and I was curious how
+09:17
+did your early days of IT and in kind of
+09:21
+your background in databases how did
+09:22
+that set you up for your chosen path as
+09:25
+a machine learning expert there was no
+10:31
+way to so because everybody just needed
+10:35
+a database then eventually I'm to city
+10:41
+in central Russia and there I realized
+10:45
+that
+10:46
+people don't really need Elfie they need
+10:48
+Java they need web services they need
+10:51
+something more interactive but still
+10:55
+attend it's a database and then just
+11:01
+service that goes to the base and then
+11:06
+around 2012 there was like grocery
+11:09
+became popular and there was machinery
+11:14
+and I happened to you to watch that
+11:17
+course and this really changed my life
+11:20
+away understood ok this is Java is fun
+11:24
+databases are fun but because I should
+11:34
+really go around the time positions in
+11:41
+data science here as well in small
+11:45
+amounts not like now just a couple here
+11:48
+in there but then I live in Poland and
+11:53
+there were a couple of positions
+11:59
+required like PhD so like experiencing
+12:03
+Hadoop and things like this it was
+12:05
+really tough to get companies also
+12:07
+didn't understand what they want from
+12:10
+the other side they just heard the key
+12:12
+this machine learning thing data science
+12:14
+is also I think let's hire somebody with
+12:16
+each key and figure out what we need
+12:21
+yeah so it was really tough to to to
+12:24
+switch from Java to today the science
+12:27
+back then so I decided okay maybe I need
+12:29
+communication so I did a masters and in
+12:35
+the meantime I also worked mostly
+12:39
+between some Java but for machine
+12:41
+learning and then when I created all of
+12:46
+a sudden they didn't need AG anymore
+12:50
+they the market figured out what they
+12:53
+actually need from data scientists so
+12:55
+they understood that HD is a nice thing
+12:58
+must and since there is only growing the
+13:03
+demand for data science language years
+13:05
+and for me what I found out is having
+13:09
+background in software engineering is
+13:12
+super helpful because at the end we have
+13:17
+a model see but now you need to do
+13:20
+something with this you need to go to
+13:21
+production and this is the part where
+13:25
+many data scientists try to do with
+13:27
+because they know how to eat paper you
+13:29
+know how to implement things but going
+13:31
+to production is difficult so that's why
+13:34
+I think having some experience in
+13:37
+exposure to software engineering is
+13:40
+similar for data scientists actually
+13:42
+make use of these models and then solve
+13:46
+the video business problems by
+13:49
+productionize in machine learning so
+13:54
+this is and I also noticed that many
+13:56
+companies are looking for this kind of
+13:58
+people for software engineers who know
+14:01
+bit of machine learning maybe not super
+14:04
+in-depth but enough to actually to train
+14:07
+a model and make good impact because
+14:11
+with the skills or software engineers
+14:12
+they contain a simple models and
+14:16
+actually make impact by production izing
+14:19
+integration with existing services and
+14:22
+[Music]
+14:24
+yeah that's that's an interesting
+14:27
+interesting insight there so a little
+14:31
+counterintuitive I guess yes there's
+14:34
+been so many time trying to go in-depth
+14:37
+into math and then at the end it turned
+14:40
+out that it's not really that needed is
+14:42
+fun it was fun to really understand how
+14:45
+these things work but actually the job
+14:52
+I'm doing the job many of my colleagues
+14:53
+are doing they don't involve solving
+14:55
+math equations you just take her library
+14:58
+take it as I said spends months playing
+15:02
+with it and take this data set then
+15:05
+throw it into library wait for 10
+15:07
+minutes and then productionize it so
+15:11
+they're part of enduring
+15:13
+doesn't take a lot of time you get the
+15:17
+focus of many programs in universities
+15:20
+and online courses is gone their
+15:23
+mathematics behind this is I think still
+15:27
+somehow needed to be able to understand
+15:30
+what's going on to the same extent a
+15:32
+software engineer probably should know
+15:33
+how a TCP works right but not many
+15:38
+software engineers actually need to to
+15:40
+go deep into all these TCP stuck to you
+15:43
+on everyday basis cried maybe once in
+15:46
+five years there is some problem that
+15:48
+requires going deep but day to day work
+15:53
+I think the same happens in motion
+15:57
+drawing so typically you need you just
+16:00
+need to have broad knowledge good
+16:02
+exposure to different techniques but
+16:04
+maybe knowing all the all the details
+16:09
+may be helpful just yeah a bit of
+16:12
+knowledge just a beautiful nation how it
+16:14
+actually works to be able to explain
+16:16
+when something is not right to be able
+16:19
+to understand and debug perhaps but
+16:22
+maybe going deeper is only needed when
+16:25
+you face this problem not like I did I
+16:31
+try to understand all in advance and
+16:33
+then in mmm I mean that's seriously this
+16:46
+is the reason why I do the podcast
+16:47
+because you have mentorship figures like
+16:50
+yourself that are like hey there's a
+16:52
+thousand way to do this but if you want
+16:54
+if you want to have like any kind of
+16:55
+quality of life this is the path you go
+16:57
+down so you're like a huge proponent of
+17:00
+like maybe get some general knowledge
+17:03
+you know that's not going to be a waste
+17:05
+but if you're somebody that gets in the
+17:06
+weeds with things like don't let
+17:09
+yourself go down these rabbit trails if
+17:11
+you're trying to make money with your
+17:13
+skills
+17:13
+you just need general knowledge and and
+17:17
+just focus on just put it whatever it
+17:20
+takes to put it in production it's kind
+17:21
+of what I'm hearing
+17:24
+when you like T's like you have like a
+17:28
+bunch of skills and then you have the
+17:31
+breadth of these skills and then T's
+17:34
+like you just touch a few subjects but
+17:38
+not a few there are many British knives
+17:43
+in machine learning models preparing the
+17:46
+services different and services like all
+17:50
+these kind of things just to know a bit
+17:54
+of them like for example how to go ahead
+17:57
+and create a singular in Java this is
+18:00
+super useful but maybe you don't get as
+18:02
+machine learning engineering don't need
+18:04
+to go really deep into understanding how
+18:07
+a art works on how to make front-end
+18:10
+applications as a professional front end
+18:13
+but just having some exposure is helpful
+18:16
+but when you specialize in some
+18:18
+particular thing for example like
+18:36
+knowledge in different areas yeah that
+18:40
+makes me shallow yes okay that makes
+18:42
+sense so if if I were to just take here
+18:44
+a little bit what would be the the depth
+18:47
+that that we should be seeking as
+18:49
+machine learning engineers like where's
+18:51
+our time best Bank going deep would you
+18:54
+say so I think it depends on what you
+18:57
+like because what I think is is that
+19:04
+that goes down for people it's different
+19:08
+for everyone
+19:09
+okay so then this diversity of skills
+19:13
+people who can do you can quickly go
+19:16
+through for some people it's actually
+19:24
+just take this niceness
+19:25
+for some people it's make it so this is
+19:32
+ingenious make sure that the data is
+19:35
+processed reliably
+19:37
+all kind of like it's called eto data
+19:43
+from somewhere process and store it and
+19:45
+make it available for elearning services
+19:47
+to consume and if this T is different
+19:50
+for people in the team what team can do
+19:55
+basically everything and if in some
+19:58
+parts maybe there is not there is not
+20:01
+expecting the team they still have some
+20:04
+challenged you to to dig deeper and yeah
+20:09
+dang that's a cool concept as you were
+20:12
+describing that I was thinking about
+20:13
+things at work because I kind of I come
+20:15
+from a similar background of databases
+20:17
+like that was my first taste of the you
+20:19
+know the data world and a lot of my work
+20:22
+I see myself going back to the data
+20:25
+engineering side and but you know
+20:28
+ultimately it's like what can we do to
+20:30
+support that mission of getting these
+20:32
+things into production and if I'm the
+20:34
+database guy and there's like a Linux
+20:36
+guy that's doing DevOps like this is
+20:39
+these are good T's to have on your team
+20:41
+so one thing is creating this release
+20:53
+and then other thing is actually making
+20:55
+sure the scaling alerting all these
+21:04
+things around the material makes it
+21:07
+production to make sure that all the
+21:12
+responses within 15 I don't know like 10
+21:19
+seconds so doesn't exceed this time
+21:23
+doesn't go down all these things this is
+21:26
+something that DevOps
+21:28
+people engineers reliability yes so
+21:38
+these people are super helpful for teams
+21:40
+and they aren't very hard to get and
+21:42
+these people now decide to learn a
+21:45
+little about machine learning then they
+21:47
+all of a sudden becomes
+21:49
+valuable for companies that want you to
+21:52
+use machine learning to make life
+21:55
+because they have this unique skills
+21:58
+that make software reliable they also
+22:02
+know a bit of machine learning to
+22:03
+actually understand what's going on so
+22:05
+this is super helpful yeah dang yeah
+22:11
+thanks thanks for allowing me to open up
+22:14
+that can of worms that's that's a that's
+22:16
+a good information
+22:17
+I was curious what was your first
+22:20
+success as a machine learning so when I
+23:20
+was it's called search matrix so they
+23:31
+are doing search engine optimization and
+23:33
+one of the things people are doing was
+23:36
+helping copywriters copywriters are
+23:39
+people who need to write look so there
+23:43
+are basically marketers they want you to
+23:45
+get the company where they are working
+23:48
+for a lot of exposure so they go ahead
+23:53
+and read as many articles as possible so
+23:55
+these articles get indexed by search
+23:57
+engines
+23:58
+when people look for things people read
+24:02
+this article something end up on the
+24:04
+company's website and ethics
+24:06
+so for these contractors the task is
+24:09
+typically a into right
+24:11
+I don't know 1000 words on this topic so
+24:14
+this is the topic do your research and
+24:16
+then come up with an article the typical
+24:20
+workflow of copywriters is going google
+24:24
+type the query they want to optimize for
+24:28
+they want to create an article for and
+24:29
+then then understand what are the
+24:34
+results are whatever talk besides what
+24:37
+they write about what are the topics the
+24:41
+cover what are the things they discuss
+24:43
+and then they analyzes to some research
+24:47
+and then they come up with a new article
+24:49
+that sort of reflects what is already
+24:52
+there that google picked up by this
+24:55
+keyword they try to produce something
+24:57
+similar and the idea is if Google found
+25:02
+the other articles useful and valuable
+25:05
+so they ended up in the top result this
+25:08
+new article also would end up in the top
+25:10
+results and this essentially this is
+25:15
+actually working
+25:16
+so this way operators can can produce
+25:20
+content in total but there's a lot of
+25:25
+minimal work so these people they need
+25:27
+to really do some research I can
+25:30
+understand what are the important
+25:31
+keywords that need to be mentioned
+25:33
+what are topics so what I was project I
+25:39
+was doing was actually trying to help
+25:43
+these people to make their job easier to
+25:46
+instead of them going through all these
+25:50
+pages from Google we would do this for
+25:54
+them and then here are the keywords that
+25:57
+you should use because 10 out of 20
+26:00
+websites use this keyboard so for
+26:03
+example if you write about New York and
+26:10
+mentioned or time scorer and Time Square
+26:12
+is two words not just one word so this
+26:15
+is like allocation to words but they
+26:19
+mean one thing so trying to extract this
+26:22
+time to understand what is helpful what
+26:26
+needs to be mentioned that was the
+26:28
+project that was new and it was a great
+26:32
+success because they convinced the
+26:33
+clients of assessment ecstatic to use it
+26:36
+and they realized this so that it helps
+26:39
+think operators to great this was a very
+26:44
+exciting project for me because I liked
+26:46
+working with data and also at the same
+26:50
+time not just but actually taking and to
+26:58
+end distance ability from the beginning
+27:00
+of the project to actually deploying
+27:02
+this seeing how customers interact and
+27:04
+try to tweak it and they're making it
+27:07
+better this is really rewarding to to
+27:12
+watch and do and this was one of the
+27:14
+first successes of course there were
+27:17
+some other projects didn't go really
+27:20
+well for different reasons sometimes
+27:24
+just happens and I decide not to focus
+27:27
+to continue working or maybe don't use
+27:34
+it and then the project just dies or we
+27:38
+realize that we do something but it's
+27:41
+not so unfortunately the cases where the
+27:50
+project is exciting but it doesn't but
+27:55
+luckily there are those projects that do
+27:58
+make impact and this is really cool too
+28:01
+to think and down for me it's a good
+28:04
+memory it was four years ago and I still
+28:08
+remember about this project is yeah
+28:13
+that's that's a really cool story
+28:16
+basically like anybody out there that's
+28:19
+trying to come up with like a you know
+28:21
+something that would
+28:23
+working in the marketplace and actually
+28:25
+make money you know with your skills
+28:26
+like that's a really cool a really cool
+28:29
+concept that you just brought up I could
+28:32
+also argue it's like a career path like
+28:35
+becoming an expert so how did you how
+28:38
+did you kind of manage with I mean it
+28:39
+was a good experience you're not doing
+28:41
+it anymore but you got some some things
+28:43
+out of it that you were able to build on
+28:45
+top of like what is your like this
+28:48
+immediately is that when I hear that
+28:50
+story I'm like dude why did you just
+28:51
+keep doing that like that sounds awesome
+29:20
+company also marketing but from a it's
+29:28
+[Music]
+29:30
+when you play something you see these
+29:32
+annoying things so maybe one of them so
+29:39
+but then yeah I eventually ended up with
+29:41
+three weeks and many many people don't
+29:45
+know this is just like eBay on eBay if
+29:52
+the bidding but this is a place where
+29:54
+you sell stuff online classifieds
+30:05
+website even though many people from but
+30:16
+business is happening there yes this is
+30:18
+happening so this is I think it's still
+30:21
+the most popular online classified so
+30:26
+until exist even it doesn't
+30:31
+it's not Craigslist but there are some
+30:34
+markets were will exist present so not
+30:38
+in the States but for example in Poland
+30:41
+Ukraine or India and a lot of countries
+30:46
+actually it's how was present is pretty
+30:50
+global in some markets will exist
+30:53
+present under a different brand people
+30:59
+know it as it's also and then in online
+31:06
+classifieds there are many things that
+31:09
+machine during consult so one of the
+31:12
+things when I started working at least
+31:14
+the first thing I was working on was
+31:17
+determining if quality of an image is
+31:20
+good some people often want to sell
+31:23
+something and then they don't realize
+31:25
+that taking a good picture is important
+31:29
+if you want something all right if it is
+31:32
+or it isn't it is it's very ok yeah
+31:35
+yes because people want to see the thing
+31:38
+before deciding ok do you want to
+31:40
+contact the seller or not although
+31:43
+sometimes if price is low the quality
+31:46
+doesn't really that doesn't really
+31:48
+matter but if price is not that low and
+31:53
+then pictures bad and people we wanted
+31:59
+to help them to say hey perhaps you need
+32:02
+to do this in not in that complete
+32:07
+darkness or not not with direct sunlight
+32:11
+or something like this
+32:14
+so just to do to educate people how they
+32:17
+should take pictures to increase their
+32:19
+chances of selling things and this is
+32:23
+where was she doing I was helpful to you
+32:25
+to analyze images that again is too much
+32:30
+sun exposure what you're critiquing them
+32:35
+on like how to how to make the pet the
+32:37
+picture better and their photography is
+32:40
+that you
+32:42
+from work but total yeah like just
+32:45
+saying them educating them so no for
+32:50
+example if they want to sell something
+32:51
+and then after two weeks nobody
+32:53
+contacted then we think okay maybe
+32:55
+perhaps it's because pictures but let's
+32:58
+analyze pictures yes indeed this picture
+33:00
+is pretty bad so then we sent a campaign
+33:03
+like a mail to the seller okay please
+33:07
+consider taking this picture because in
+33:10
+this picture there are these problems
+33:11
+for example this is the objects not
+33:14
+properly centered and it's too dark
+33:18
+focus and then here is an instruction
+33:22
+however good initially and then after
+33:24
+these people would sign off them not
+33:27
+everybody but some of them would
+33:28
+actually follow the otherwise we take
+33:32
+pictures and then we would see that
+33:34
+indeed the number of contacts these
+33:37
+people started to receive their the
+33:42
+buyer started to be more interested in
+33:45
+the items that was one of the first
+33:48
+projects I worked and then I think my
+33:57
+question is pretty important is content
+34:00
+foundation so people can you cannot even
+34:04
+imagine what people try to sell or like
+34:08
+some some legal services or weapons or
+34:12
+drugs or just scamming if stuff for
+34:15
+gaming stuff of course here's like a lot
+34:17
+of fraud and typically what happens
+34:22
+there is the content foundation platform
+34:24
+and content foundation team that looks
+34:26
+at the content that users publish and
+34:29
+you judge thinks hey this is not a loan
+34:32
+to to to sell here you just bound to the
+34:37
+users try to indicated when for example
+34:40
+in non serious cases like maybe somebody
+34:44
+was trying to so cellphone and put them
+34:48
+into cars category okay
+34:52
+select innocent
+34:54
+but there are serious cases of fraud
+34:56
+where people for example still images
+35:00
+from good good listing then they post as
+35:05
+genuine scholars saying hey this is a
+35:08
+flat I'm trying to discover this is
+35:10
+Karen Francesco or this is her cellphone
+35:13
+and transistor and then somebody
+35:16
+contacts by a contacts and this thruster
+35:21
+tells hey
+35:22
+yeah but in front of you there are ten
+35:24
+other people who also want to buy this
+35:25
+cell phone but if you give me hundred
+35:27
+dollars I'll set it aside just for you
+35:30
+and then some people do hundred dollars
+35:35
+so this is I want you to prevent this
+35:41
+problem and this is what the content
+35:44
+validation team does and a lot of things
+35:48
+so for example one of the projects I
+35:51
+worked in duplicate this is activities
+35:55
+when somebody copies existing content
+35:59
+and tries to you to pose as a good
+36:02
+seller so this is the case where we can
+36:05
+detect this or maybe this user has other
+36:11
+accounts and by looking at the behavior
+36:14
+of these accounts like where they come
+36:17
+from what are the IDs
+36:19
+what time of the day they come from so
+36:22
+we can somehow class service accounts
+36:24
+and understand that they actually belong
+36:26
+to the same to the same person who
+36:28
+discovered et and then we can bound them
+36:32
+together at once so there's there are a
+36:37
+lot of opportunities to actually use
+36:39
+machine learning to make the job of
+36:41
+moderators easier because moderators
+36:45
+need to go through a lot of we want to
+36:49
+help them to somehow show them like okay
+36:52
+this is fine you don't even need to look
+36:54
+at this because this is just a pairs of
+36:56
+sauce that somebody wants to sell so
+36:59
+this is innocent so we don't even show
+37:01
+this to directors but in some cases hey
+37:03
+this looks like a gun is sure one
+37:05
+control that this is the gun and take
+37:11
+so this is actually the Confederation is
+37:15
+the place where I rushed learning
+37:17
+catalytics so this was the first
+37:20
+successful use case of machine learning
+37:22
+it was indeed viable and then from that
+37:25
+team yeah it's it was it was kind of
+37:34
+their gateway drug they're like okay we
+37:36
+need to be anybody with like a manual
+37:38
+process or if they feel like like
+37:41
+everybody is leveraging this technology
+37:43
+and they're more effective at their work
+37:45
+which i think is just my experience
+37:48
+doing these podcasts and talking with
+37:50
+people it's like there's a lot of fear
+37:52
+around this technology but it's actually
+37:54
+improving our tape like our ability to
+37:58
+live life at its fullest or whatever you
+38:02
+want to call it but when a moment is
+38:32
+needed the actual pilot of the plane
+38:35
+takes care of things so the same machine
+38:40
+learning is not true the model says
+38:43
+please review it for me and confirm that
+38:46
+there's just like yeah that's a cool
+39:03
+metaphor yeah I might even just you know
+39:06
+use that going forward as my metaphor
+39:09
+cool thanks for sharing that so I was
+39:14
+curious so you're writing this book
+39:16
+right now so and you you're kind of like
+39:19
+you
+39:19
+you understand very well like if you're
+39:22
+gonna produce content you go research
+39:24
+what people are looking for right now
+39:26
+so what patterns did you see and the
+39:30
+markets needs that triggered your idea
+39:32
+for writing so I so so that's something
+41:06
+[Music]
+41:13
+so some company prepares the data set
+41:15
+and then asks people can you train a
+41:21
+model for us and this is very hands-on
+41:26
+so you can immediately see feedback
+41:30
+because
+41:31
+little world you you have a model use
+41:35
+for the so called test data this is the
+41:37
+data for which you don't have you need
+41:40
+to generate predictions you upload these
+41:42
+predictions on a platform and you see
+41:45
+how well your model is doing so you get
+41:47
+feedback immediately so this is really
+41:51
+hands-on you like a lot of coding like
+41:56
+do you just click the model you try to
+41:58
+optimize pneumatic that you in the
+42:01
+competition and then you submit your
+42:04
+solution and so this is a lot of
+42:10
+projects so like each competition is a
+42:12
+project and for me personally this is
+42:14
+when I learned most so years University
+42:20
+to learn theory but this theory without
+42:23
+actually practice and to be honest
+42:28
+wasn't that needed to do these
+42:30
+computations so because these
+42:32
+competitions are really hands-on things
+42:34
+you just think a library you're flying
+42:36
+and try to tune parameters you think
+42:37
+I'll ever use right we have to state
+42:39
+here try this
+42:41
+please a lot of engineering work just
+42:44
+you have an idea you want to code this
+42:46
+idea in Python and then you test Expedia
+42:50
+works and this made me realize the the
+42:54
+best way at least for me but also for
+42:56
+many other people on cargo is not just
+42:59
+study a textbook but rather do things
+43:03
+just get a data set get my hands dirty
+43:07
+solve this problem and try to understand
+43:11
+what is there then it was me then just
+43:16
+you know watching call this equation so
+43:24
+that's why I think that this
+43:28
+project-based approach is the best
+43:30
+approach for people who are software
+43:33
+engineers who can code and that's why I
+43:37
+wrote this book so first of all its
+43:39
+Python because I think
+43:42
+cheering and then it's basically for me
+43:46
+personally
+43:47
+any people agree one of the best ways
+43:51
+yeah and and actually so just hearing
+43:55
+what you were saying there it's almost
+43:57
+like if because I've I've worked with
+44:00
+those Kol competitions before and
+44:01
+there's certainly a lot you can learn
+44:03
+just by seeing other people's work that
+44:05
+they submit and you're like oh
+44:07
+everybody's uploading this I wonder what
+44:09
+their methodology is and then you can
+44:11
+kind of learn from that but it kind of
+44:13
+there's still no like video tutorials or
+44:16
+something that you can watch on these
+44:18
+data sets so one might be able to argue
+44:20
+like if you are trying to perform better
+44:23
+as a kegel competitor for example your
+44:27
+your resource might that your the book
+44:30
+that you're writing is almost like built
+44:32
+on the pains that you had going through
+44:36
+this processes and so you're kind of
+44:37
+like this is going to be a resource it's
+44:39
+going to help you compete better it's
+44:41
+going to help you get jobs understanding
+44:47
+this well then great for us but yeah so
+45:50
+this is more targeted for people who
+45:51
+want to do well
+45:55
+okay yeah and that's at the end of the
+45:57
+day like we're trying to get these
+45:59
+skills we're trying to get paid that's
+46:01
+the mission yeah it seems like a cool
+47:35
+community like it's very collaborative
+47:38
+and like in like you might have like
+47:40
+that the highest performing score and
+47:43
+you go to bed and you wake up in the
+47:44
+morning and you're like position ten you
+47:46
+know like things are moving it's like
+47:48
+it's almost like a video game I don't
+47:50
+know it's yeah it's interesting so if
+47:55
+you if you have some time and you want
+48:00
+to spend somewhere
+48:03
+[Music]
+48:07
+difficult to to stop doing car yeah good
+48:15
+to know yeah that's that's good to know
+48:18
+I wanted to okay so you kind of alluded
+48:20
+to this like the difference between
+48:22
+Python and JavaScript and why you kind
+48:25
+of like went that way and I noticed on
+48:28
+your CV you had mentioned that you're
+48:29
+one of your gifts that you bring to the
+48:32
+world is that you are you are good at
+48:36
+rapid prototyping and so I was wondering
+48:38
+where do your rapid prototyping skills
+48:41
+get applied most often I'm just curious
+48:43
+like is it everywhere or you know is
+48:47
+that working what you can do is just sit
+49:28
+there look at the pictures and say okay
+49:31
+this picture is not good let's send a
+49:33
+mail to this seller and see how they
+49:35
+react so instead of investing into into
+49:40
+building the whole thing just take some
+49:43
+effort to validate this and then invest
+49:57
+this example looking things yourself and
+50:05
+then maybe have a spreadsheet with you
+50:07
+know who should send this user in email
+50:10
+but of course you can also automate this
+50:12
+and give something simple
+50:18
+- that baby doesn't always fall the best
+50:22
+engineering standards maybe instead of
+50:24
+three modules use of just one like you
+50:27
+Madame Rendell
+50:29
+but you as fast as possible you want to
+50:32
+validate something to see that this is
+50:35
+something users want or this is um
+50:37
+something that other stakeholders in
+50:40
+company think that they should invest on
+50:42
+so maybe they should convince not the
+50:44
+end users but first the decision makers
+50:47
+who decide which project to project then
+50:53
+to convince them somehow the best way of
+50:57
+convincing is not the PowerPoint
+50:58
+presentation of doors or sores but what
+51:01
+works better is a prototype where they
+51:04
+can actually click on things they see
+51:06
+how it works
+51:07
+and this is what I mean by prototype in
+51:12
+skills to be able to as fast as possible
+51:14
+to have that and so it means yeah yeah
+52:02
+man I okay so first of all like we're
+52:05
+about an hour into this I feel like I've
+52:08
+gotten my money's worth out of this like
+52:10
+what you're talking about is seriously I
+52:13
+don't know if it's just like the stuff
+52:15
+going on at my my work right now but
+52:17
+like this is so critical and we are
+52:20
+practicing this right now and it's so
+52:22
+exciting I think to know okay you know
+52:24
+in a week we're gonna know if this is if
+52:27
+this thing even has a future or not and
+52:29
+sometimes it's almost like a coach
+52:31
+thing like if the company culture I
+52:33
+don't know I it may it's very intuitive
+52:36
+to me but you talk to me a year ago I
+52:39
+don't know if like rapid prototyping is
+52:42
+something that I would you know seek out
+52:44
+as a skill on my team or even to build
+52:47
+on my own but holy cow it sounds like
+52:49
+it's one of the most important things
+52:51
+that you can yeah that's a really cool
+53:48
+framework to operate from what what do
+53:51
+you have maybe we already covered this
+53:53
+but just like off the top of your head
+53:55
+what are like three tips you have for
+53:57
+someone to become an expert at rapid
+53:59
+prototyping well just maybe time frame
+54:06
+so let's say I want to spend on this
+54:11
+only five days they want to do as much
+54:14
+as possible during these five days and
+54:16
+then like just like mindset so just try
+54:22
+to squeeze most out of yourself maybe
+54:24
+get some people to also work on this and
+54:28
+just one first time frame and not let it
+54:35
+you know take more time than initially
+54:38
+just one week and then it's hard so I
+54:41
+think it really helps you to think
+54:44
+we only have one week what is the most
+54:47
+important thing I need to focus on my
+54:50
+god yeah actually maybe I don't eat
+54:51
+other things so let's concentrate on
+54:54
+this one let's help this particular
+54:57
+thing working let's have a demo that
+54:59
+showcases this particular thing it helps
+55:01
+you also to understand what is the most
+55:03
+important thing dang so like so there
+55:11
+there's no more tips like if you take
+55:13
+that one and put it in the bank you're
+55:15
+good to go or do you have other tips
+55:18
+well I mean that's good I mean that's my
+55:23
+money's worth right there but I want to
+55:26
+pry a little more that's part of this
+56:09
+wonderful thing and then just play there
+56:12
+and then in Java that for me is the
+56:24
+concept of supernatural I was really
+56:29
+struggling to to start using them but
+56:31
+once I did start that was there was no
+56:34
+way so I think just using the language
+56:39
+with all these wonderful tools then I'm
+56:45
+trying to come up with 30 yeah maybe
+56:50
+just people who also want to to to help
+56:55
+you do this alone but
+56:57
+ten box and then have a few people to
+57:00
+help you also know that sometimes people
+57:03
+do this alone okay let me just post
+57:06
+myself in this room for a week and then
+57:08
+I'll have a brother to me
+57:14
+dang man
+57:15
+that's that's powerful I mean dang
+57:18
+there's so much gold there like yeah one
+57:21
+of you practicing this okay that's maybe
+57:23
+you can be productive but like a group
+57:25
+of like-minded people like that they
+57:28
+call that where it's like one plus one
+57:30
+equals three
+57:31
+it's like yeah in my head I already have
+58:35
+a solution but I don't always know how
+58:43
+why did I think it should be this way
+58:46
+okay having clear path like clear steps
+58:54
+explaining the steps this is something
+59:04
+then that's that
+59:06
+powerful so I won last part on this
+59:08
+rapid prototyping I must know okay so
+59:11
+you have maybe you like every year you
+59:14
+set your goals and you're kind of like
+59:17
+okay six months from now I want to be
+59:19
+here nine months from here I want to be
+59:21
+here but if you're practicing this rapid
+59:23
+prototyping and you're setting yourself
+59:25
+to maybe like a five day hard stop or a
+59:28
+15 or 30 day hard stop how do you like
+59:32
+my intuition tells me that it's good to
+59:34
+have long-term goals but you probably
+59:36
+learned so much through that process six
+59:39
+months down the line you realize how
+59:40
+Delusion delusional you were with like
+59:43
+what was appropriate goals you know six
+59:46
+months out how do you deal with that
+60:01
+[Music]
+60:10
+sometimes
+60:36
+yeah that's that's kind of like what is
+60:38
+the you know like the answer to life or
+60:41
+something like that maybe that's what
+60:43
+that question was so you did well you uh
+60:45
+okay cool man
+60:47
+um what do you recommend that does not
+60:51
+take too much effort but solves like 80%
+60:54
+of the challenge of becoming like a
+60:58
+kegel competition winner
+61:00
+[Music]
+61:12
+[Music]
+61:18
+and this is not even being in money was
+61:20
+I positive so only top three in money
+61:24
+but actually being like ending in top
+61:27
+ten is super difficult so this is
+61:30
+recognized in the community is a sign of
+61:34
+that's why they they have this cattle
+61:36
+master page saying that this person give
+61:40
+well in this recognizable thing and
+61:45
+unfortunately there is no easy answer
+61:46
+but practice and for the competition
+61:48
+that I did pretty well I started from
+61:51
+the beginning and then it lasted for
+61:54
+three months and almost every day I did
+61:57
+a little bit so just read forums we did
+62:03
+four on see what other people do try to
+62:06
+also to not get behind trying to
+62:11
+reproduce what they do maybe generate
+62:12
+some ideas pick the most promising one
+62:15
+try to implement this and also I think
+62:17
+sharing like change some things on
+62:21
+forums also helps because this creates
+62:23
+this community that if you share a
+62:26
+poster back so when you discover things
+62:29
+that really work and if you can get a
+62:31
+different it's still helpful to you know
+62:34
+to share these things so because then
+62:36
+others will share share back some other
+62:39
+hmm yeah but so it's really helpful for
+62:45
+like a year it was helpful for Mike a
+62:48
+year to spend this coffee here and try
+62:53
+to to do well there because immense
+62:56
+amount of knowledge there but it's also
+63:00
+a big time investment and then at some
+63:03
+point they realized I'm spending too
+63:05
+much time on this
+63:06
+what's so but probably the best the best
+63:13
+way of doing this is Pitcairn's
+63:16
+try to understand it and kernels are
+63:19
+often written by non-professionals of
+63:22
+engineers and trying to understand them
+63:25
+is often difficult so but still try to
+63:28
+figure out what's going on in this
+63:30
+camera
+63:31
+Five Forks and then also try to read
+63:34
+forums and then it should help you maybe
+63:37
+not end up in gold but this you remember
+63:40
+perhaps which is still a lot of
+63:45
+experience yeah I thanks for sharing
+63:52
+that so I I kind of I prep out some
+63:56
+framework for the questions of the
+63:58
+podcast and then I kind of go on these
+63:59
+rabbit trails as they pop up but after I
+64:02
+wrote that question down and as far as
+64:04
+our conversation has gone right now I
+64:06
+actually can't I like the answer that
+64:08
+you gave I think there will be an
+64:10
+audience that wants to hear that message
+64:12
+but I'm actually more genuinely
+64:15
+interested in like I think based on what
+64:17
+we talked about it's important to get a
+64:19
+job with your skills to get paid for
+64:21
+your skills so I actually if you last
+64:24
+let me ask like almost the same question
+64:27
+what do you recommend that does not take
+64:29
+too much effort but solves 80% of the
+64:32
+challenge of basically convincing
+64:34
+somebody that you are a good person to
+64:37
+hire as a machine-learning professional
+64:41
+or yes I find if you don't find it other
+65:08
+said try to build your own data set this
+65:10
+is difficult but but then also like once
+65:20
+you have this once you train a model
+65:22
+don't just don't let it just sit there
+65:25
+let the world know about this
+65:27
+so put the code on github write a postal
+65:32
+medium or then try to use social media
+65:36
+to somehow tell the world hey
+65:41
+please look and create awareness about
+65:44
+yourself and then I think if you do this
+65:48
+light for 10 projects you get noticed
+65:52
+for sure like especially if it was
+65:55
+somewhere like a good news or some
+65:57
+places like that yeah and there's a lot
+66:00
+of there are a lot of people who are
+66:04
+interested in this type of content and
+66:09
+when you learn it yourself and then also
+66:11
+try to teach others like this a lot of
+66:16
+people there's big audience of people
+66:19
+who want to also learn from this
+66:22
+experience
+66:23
+and also try to reproduce this project
+66:26
+and for them it would be very helpful
+66:29
+and for you okay
+66:33
+that's really solid thanks for sharing
+66:34
+that um what do you think is overly
+66:37
+difficult to master with machine
+66:40
+learning that newcomers should kind of
+66:43
+just up completely avoid well probably
+66:49
+at the beginning people should avoid
+66:53
+going too deep into theoretical
+66:55
+foundation especially with things like
+66:59
+support vector machines or there are
+67:03
+some certain algorithms that is solid
+67:06
+theoretical foundation but at the same
+67:08
+time it requires a lot of knowledge to
+67:12
+industry to be able to be able to
+67:15
+understand it so this support vector
+67:18
+machines for example acquire a few years
+67:21
+of calculus and you know a year of
+67:27
+convex optimization so like things that
+67:30
+are pretty difficult and at once and
+67:32
+people studied them in like third fourth
+67:37
+year of university people who major in
+67:41
+math for example so this is pretty
+67:46
+difficult and it might give you a sense
+67:50
+that I don't understand anything
+67:54
+so let's quit because it's not worth my
+67:57
+time to I can people when they see these
+68:00
+equations then just give up what don't
+68:08
+so don't let this equation sky because
+68:13
+there are libraries that you often don't
+68:15
+need to to to be afraid of what's inside
+68:20
+you just need to be able to use them
+68:22
+like like metaphor I use tools already
+68:27
+like you don't need to know how to cpa
+68:31
+these tech works to be able to create
+68:33
+obscurus so of course it's helpful but
+68:36
+for for a new climate certainly focus
+68:40
+should be on learning fast rather than
+68:44
+going deep into the mo so I think the
+68:50
+same to just stay at the problem like at
+68:53
+the right level of abstraction and for
+68:55
+the beginners it might be a library so
+69:02
+don't don't try to you to do from this
+69:05
+time maybe when the time comes
+69:17
+hmm that's all yeah that's awesome
+69:20
+don't don't try and peel the onion all
+69:22
+it all I want that's awesome there's so
+69:25
+much wisdom you know in that holy cow
+69:28
+okay yeah I love the whole condom with
+69:30
+your prototyping methodology it's about
+69:33
+this like you know being incremental
+69:36
+seeing if it works and super dynamic
+69:39
+like I know I asked you like what are
+69:42
+your morning routines you're like
+69:43
+whatever I need to do I'm pretty
+69:45
+adaptable to like whatever needs to be
+69:46
+done and I think that's the name of the
+69:48
+game man like what you're like them the
+69:50
+real core of your message is like just
+69:53
+you know focus realize that you have
+69:56
+these tendencies maybe that you might
+69:58
+try to get into the weeds or whatever
+69:59
+but just be proactive on not trying to
+70:02
+peel the onion be incremental or not try
+70:05
+and peel the onion all at once so
+70:07
+seriously man I'm resonating with your
+70:10
+message here so thank you let's see here
+70:14
+um let's see here okay so what is the
+70:17
+easiest way for someone to start
+70:19
+integrating the promises of Auto ml or
+70:23
+Auto machine learning into their
+70:25
+workflows like how can we do that
+70:27
+starting tomorrow yes this is think that
+70:40
+finding the best one so to use them you
+70:46
+don't really need much just tries to to
+70:59
+find the best model or there are some
+71:03
+libraries like optimization libraries
+71:05
+that lets you find the best parameters
+71:12
+to explore and then finally there are
+71:15
+companies like Google Amazon Microsoft
+71:19
+in the cloud and then you just have a
+71:36
+data set upload this data set and then
+71:39
+this thing figures out how to deal with
+71:43
+each type of a CSV and then we also need
+71:51
+to specific this cone is the target
+71:54
+the number or the category I want to
+71:57
+predict and then in figures out what to
+71:59
+do with the rest he trains the best okay
+72:02
+this is you can use it either in our
+72:06
+services or you can download it and use
+72:08
+it and then I think this is the best way
+72:13
+is just you go there to your favorite
+72:15
+local provider and just try to play
+72:18
+but over and see actually and observe
+72:23
+how easy it is to to use these things
+72:26
+and this is one of the other things I
+72:31
+mentioned that I enjoy seeing it as a
+72:35
+trend is that machine learning becomes a
+72:37
+commodity what more people can start
+72:42
+using it even without you know having a
+72:45
+proper mathematical background like
+72:48
+living PhD in mathematics or physics
+72:51
+like some some other complex subject but
+72:58
+simple people mere mortals somebody who
+73:01
+can code can already benefit immensely
+73:06
+from this services this can go ahead and
+73:11
+to solve real business problems and yeah
+73:19
+they eat so the ecosystem is kind of
+73:21
+matured to a point where there is no
+73:23
+excuses like you can get out there and
+73:26
+get your hands dirty and solve
+73:27
+real-world problems and you don't need
+73:29
+to be like some PhD genius like there's
+73:32
+no excuses if you want to get your hands
+73:34
+dirty you can it's kind of what I'm
+73:36
+hearing cool
+73:38
+yeah thanks for sharing that what are
+73:42
+three key learnings from your experience
+73:45
+running machine learning models in
+73:47
+production yeah so was spending too much
+74:08
+time on don't don't make the model
+74:13
+perfect just have something super simple
+74:15
+like a simple baseline and then try to
+74:18
+deploy it try to move with this
+74:21
+prototype in production like with this
+74:23
+baseline in production and then see how
+74:26
+people that don't make it overly complex
+74:29
+just a simple
+74:31
+just take some category and then compute
+74:34
+mean within each category for example if
+74:37
+you want to predict a price for an item
+74:40
+and just look at the mean price at the
+74:43
+average price in each category and then
+74:45
+just use that as prediction so something
+74:48
+super simple you see that all the car
+74:52
+this particular model like on average of
+74:57
+this price is this price situation don't
+75:00
+make a super complex model like in your
+75:03
+network or something
+75:04
+just go with simple things first try to
+75:06
+deploy that see how users react to this
+75:09
+see if they actually use it if they
+75:12
+don't stop because like after investing
+75:17
+a lot of time in any project this may be
+75:22
+another learn that people tend to have
+75:27
+difficulty stopping working on project
+75:29
+you know if you're at about this idea
+75:32
+effect if you built unto yourself you
+75:34
+little of it even if it's like for an
+75:37
+outsider it's like oh you know it's your
+75:40
+baby
+75:40
+yes exactly yeah oh man this is yeah
+75:45
+carry on
+75:46
+yeah yeah and then like for example you
+75:49
+view the desk or chair and this chair my
+75:54
+baby ugly thing the same thing happens
+76:10
+with people who must have this maybe
+76:15
+it's not super optimal and maybe just go
+76:19
+down but it's still like people invested
+76:24
+a lot of time into this and they have
+76:25
+troubles letting go and I know that I
+76:31
+myself like realizing this is helpful to
+76:35
+you know just to let go of things at
+76:40
+some point because
+76:41
+there's no point investing more time in
+76:43
+this but at the beginning like when you
+76:46
+spent only one week again comes back to
+76:49
+this prototype in skills like just have
+76:51
+a simple baseline and then if it doesn't
+76:53
+work it's easier to let it go because
+76:57
+you clearly see that your customer is
+76:59
+not super excited about this so it's not
+77:02
+something you expected to see you learn
+77:04
+that anymore yeah okay that's awesome
+77:09
+yeah thanks for sharing that
+77:11
+Oh what is a gentle approach to learning
+77:14
+more about kubernetes I know you're
+77:16
+excited about that technology well not
+77:33
+no you don't need to know into us but at
+77:37
+least concepts like what other things
+77:40
+and for that there is a thing called
+77:42
+mini tube so it's basically kubernetes
+77:47
+that you can just have your laptop and
+77:48
+then try to to deploy a simple service a
+77:54
+single service that did surprise my car
+77:58
+and then just get a mini cube instance
+78:03
+on your machine and try to deploy your
+78:06
+web service with this model in this will
+78:12
+not take more than five hours of your
+78:14
+time but this is super valuable to know
+78:17
+and then you won't get lost when you get
+78:20
+hired it turns out that the company used
+78:25
+for many people especially better
+78:27
+scientists this is something scary
+78:28
+okay I'm not used to these kind of
+78:31
+things this is not my mo not my thing so
+78:38
+they just afraid but kubernetes made it
+78:42
+very easy for people to actually to
+78:48
+abstract from these difficult things of
+78:50
+the scaling because what I like about
+78:53
+this makes
+78:54
+is super easy to work with
+78:57
+infrastructure infrastructure related
+78:59
+things so it's a very nice abstraction
+79:01
+on top of you know even AWS machines or
+79:06
+your own machines we don't use in the
+79:10
+videos but many companies still have
+79:12
+their own data centers there is a really
+79:17
+good abstraction to you for managing all
+79:19
+these machines and it's not difficult
+79:23
+for a user name is to learn how to use
+79:28
+it of course it's difficult for people
+79:29
+who are professionals like engineers
+79:35
+engineers this is basically to to
+79:40
+maintain posture but as a user doesn't
+79:46
+take too much time to actually learn how
+79:47
+to use it and they're good tutorials in
+79:52
+something like cube floor getting
+79:54
+started just follow this tutorial that
+79:57
+should be not to be helpful also not
+80:03
+wait till somebody with this knowledge
+80:05
+implement this because it's easy to
+80:07
+implement this yourself you shouldn't be
+80:10
+scared you can actually learn this cool
+80:20
+and it sounds like cube flow is kind of
+80:22
+like really like it's like the least
+80:25
+intimidating way maybe to go about cool
+80:29
+yeah flow is actually like there's me
+80:32
+and Cuban ladies and you just do to
+80:35
+learn about cube flow is another
+80:41
+abstraction for training okay Oh perfect
+80:51
+yeah yes so this is I'm still exploring
+80:56
+it to see how useful it is but many
+80:59
+companies
+81:00
+and saying that this is super useful
+81:03
+they can also like there are
+81:08
+alternatives to keep form like this so
+81:12
+called machine learning platforms where
+81:13
+you can train a model for example in
+81:17
+case of Amazon there is a wsh maker it's
+81:21
+quite a similar to for training and
+81:24
+hosting models and cue flow is cloud
+81:33
+agnostic so you can use it in any cloud
+81:36
+and you don't have to use cloud for that
+81:39
+he can just use your own servers your
+81:41
+own data center to also have the
+81:44
+benefits of this ok yeah that's awesome
+81:48
+and I'm gonna dig into that probably
+81:50
+well tomorrow cuz it's a it's getting a
+81:52
+little late here but yeah I'll be
+81:54
+digging into the the promises of cube
+81:57
+flow so thanks for sharing that I know
+81:58
+were kind of running how's your how's
+82:00
+your computer doing we got a few minutes
+82:02
+left
+82:02
+yes 10 minutes ok so these are just kind
+82:10
+of wind down questions so just whatever
+82:12
+comes to mind go ahead and I think I got
+82:15
+like 5 of them so I'm just gonna go for
+82:16
+it ok what qualities do you look for in
+82:19
+a good meet-up okay somebody who wants
+82:50
+to listen to so people and free food
+82:56
+helps no I I hear you there cool um how
+83:02
+do you decide what speaking
+83:03
+opportunities to take on well right now
+83:07
+I think
+83:08
+watch everything okay I don't have that
+83:11
+many speaking opportunities and I
+83:12
+practically seek to speak somewhere and
+83:16
+I still learn how to make my call for
+83:19
+proposal sound exciting so actually I
+83:22
+get to speak on conferences because I
+83:25
+often don't so right now I'm okay so you
+83:33
+I mean you made a promise to yourself
+83:35
+like I'm going to speak more and then
+83:38
+you're just you're it's almost like yeah
+83:42
+it's almost like there's a group of
+83:44
+people out there that are like sign me
+83:46
+up and then there's other people I've
+83:48
+just noticed this like booking people on
+83:50
+the podcast some people are like yes
+83:52
+please sign me up and other people are
+83:54
+like what's the nature of this and so
+83:57
+yeah the people I guess in their motives
+83:59
+but I was kind of curious what your what
+84:01
+was kind of behind your initiative there
+84:03
+and I look forward to promoting like if
+84:06
+you want more speaking opportunities I
+84:08
+look forward to help promoting that yes
+84:12
+[Music]
+84:16
+yeah
+84:18
+this is a real quick question relating
+84:21
+to speaking but I mean did it just come
+84:24
+natural to you or did you have to was
+84:27
+there some sort of like transformation
+84:29
+you went through that you have some
+84:30
+insight on now like how to be a good
+84:32
+speaker or what's what's your thoughts
+84:35
+on that so it's some confidence is
+84:42
+really go next and they want to make
+84:46
+sure that the quality of the
+84:49
+presentations I was very happy to get
+85:00
+something like this okay but yeah mostly
+85:09
+smells just natural so I think the the
+85:12
+main thing is to to have a coherent
+85:14
+story so not just a bunch of facts but
+85:18
+- to cover story there and and then also
+85:26
+one of the things I didn't do and then I
+85:28
+learned from the gorgeous is to make
+85:33
+sure the audience is never lost
+85:35
+so have every now and then have an
+85:37
+online and somehow summarize what we
+85:40
+just learned and what we got and then
+85:43
+and then have a summary so then people
+85:45
+leave the room with hear message in
+85:48
+their head
+85:49
+and for that somebody is very yeah
+85:53
+that's solid uh dang thanks for sharing
+85:56
+that that's cool man
+85:59
+let's see here three favorite learning
+86:02
+resources for machine learning we've got
+86:04
+the book well that's yeah okay well okay
+86:18
+even though it's even after okay cool
+86:45
+any other ones or those are your good
+86:47
+enough near unless for confusion
+87:10
+computer issues and it's quite demanding
+87:17
+course okay so peeling the onion maybe
+87:25
+don't start there but consider aces
+87:27
+legging
+87:32
+okay cool that's awesome all right
+87:34
+here's one for you yeah what is
+87:59
+important is solving business problems
+88:02
+and being able to to code to solve these
+88:05
+problems and don't be afraid of with the
+88:08
+baselines if you're if instead of
+88:12
+machine learning models model if they're
+88:15
+for my dream if statements it's equally
+88:18
+good so start with heuristics and then
+88:23
+if you see that cool yeah that's solid
+88:29
+man Thanks
+88:31
+okay the most important book you've ever
+88:33
+read and there's no there's no rules
+88:36
+here it could be like fiction well well
+88:40
+if you have I'm going for one but if you
+88:42
+got if you got more you know what's your
+88:44
+hierarchy of a couple of okay so the
+88:46
+first effective Java
+88:53
+okay active Java even though it's about
+88:57
+it's not just Java so it does use Java
+89:01
+but many things are quite quite general
+89:04
+so things like well especially as a Java
+89:16
+developers or some things directly
+89:18
+applicable to the things I was doing but
+89:20
+also teaching best practices best coding
+89:22
+styles and then explaining the divinity
+89:26
+matters it's a third safety good like
+89:31
+having good names all these things then
+89:36
+maybe
+89:39
+and interpretation of computer programs
+89:40
+may be heard about this one so this is a
+89:43
+beautiful book and I use this book to to
+89:48
+learn about functional programming so it
+89:50
+uses scheme which is idealism and just
+89:57
+reading it and then going through
+89:59
+exercises I think after this book I got
+90:02
+I understood what functional programming
+90:04
+is they could use this everywhere in
+90:08
+Java in Python and not be afraid of that
+90:13
+and also with time I realized not to
+90:17
+understood how to overuse this because
+90:23
+over two things but I think this
+90:30
+structuring the interpretation of
+90:32
+computer programs and is great
+90:35
+introduction to functional programming
+90:37
+then I think that just two years three
+90:43
+years ago was designing data intensive
+90:47
+applications this is a super nice book
+90:50
+and I think it's a must read for any
+90:52
+software engineer anyone who she teaches
+90:57
+basics of how to design your systems how
+91:03
+to make them reliable how to make them
+91:05
+available and then it also goes into
+91:09
+basics of date engineering like what is
+91:11
+my videos what is dreaming like this I
+91:15
+think I still use this book as a
+91:20
+reference sometimes they go to this on
+91:22
+my desk at home often just go through
+91:25
+this Octavia's now it's not very
+91:28
+demanding but it gives a great overview
+91:30
+of things that then it also references
+91:37
+like if you want to go deeper into some
+91:41
+topics and you okay cool yeah I've seen
+91:46
+that on the O'Reilly
+91:47
+that's one of the O'Reilly books it's
+91:49
+got like a pig or something on the front
+91:51
+like a board
+91:53
+yeah that's a okay that's a it's come on
+91:58
+my radar before but I now I'm very
+92:00
+interested just based on your okay
+92:02
+thanks for sharing that programming
+92:06
+languages to learn in you can just you
+92:09
+know I don't think job is yet I think
+92:42
+like just if you know during different
+92:48
+language like just to think differently
+92:53
+yeah then I also think in worrying but
+92:58
+JavaScript I think this is you really
+93:02
+need to know even if you for
+93:13
+demonstration for demo purposes like if
+93:15
+you want to showcase it to somebody then
+93:18
+service is the best like a page is the
+93:21
+best medium for that and then being able
+93:24
+to quickly catch something in JavaScript
+93:26
+to convey your message to people yes I
+93:32
+I'm old-fashioned so I don't watch I
+93:38
+don't follow the latest I would simply
+93:46
+suggest the languages that certainly
+93:56
+yeah they've stood the test of time yes
+93:59
+and they're still like a live type thing
+94:01
+is Java still the most book
+94:03
+which in the world according to some
+94:05
+witnesses yeah for some indices
+94:09
+JavaScript and I think knowing them is
+94:14
+also I think for machine learning
+94:16
+engineer Oh in a bit of sequence is
+94:20
+awful because as a Python user sometimes
+94:24
+things just sometimes we really need to
+94:29
+machine learning involves lot of number
+94:31
+crunching and this is where you don't
+94:36
+wait to for a web service to answer you
+94:40
+have CP intensive work and for that C is
+94:44
+the best thing sometimes it just helps
+94:48
+to quickly read something C and then use
+94:52
+it from path and then it can have a
+94:55
+dramatic effect on performance like
+94:57
+going from hours to minutes like from I
+94:59
+don't know from 60 minutes to maybe have
+95:03
+bright work for certain cases especially
+95:06
+when it comes to number 20 is still the
+95:09
+best dang I have not I have not had that
+95:13
+response yet on the show and I am
+95:15
+forever grateful that's just more
+95:18
+insight into the ecosystem here and you
+95:22
+certainly delivered so I thank you for
+95:25
+coming on the show sharing all this
+95:27
+knowledge I want to know what is your
+95:29
+call to action here we got the book
+95:30
+coming out they can go sign up for the
+95:33
+meet with you with you to summarize
+95:47
+anything or this is your this is your
+95:49
+time first don't be afraid of breaking
+96:09
+things you can learn
+96:16
+a lot of theory and yeah I guess that's
+96:21
+somebody and also I'm trying to build my
+96:26
+personal brand right now to be more
+96:29
+present in online so I created Twitter
+96:32
+like two weeks ago or three so follow me
+96:35
+there I'll try to post things from dr.
+96:39
+LinkedIn is more active on LinkedIn so
+96:41
+feel free to connect or fall okay
+96:45
+awesome
+96:46
+and we'll make sure they got the link to
+96:47
+the book the first three chapters are
+96:49
+out and in appendix right now and that
+96:53
+is continually progressing and you get
+96:55
+you don't have to wait for the book to
+96:57
+come out to jump in and get your hands
+96:59
+dirty and start building your portfolio
+97:01
+yes thank you for school yeah Aleksey
+97:04
+thank you so much for coming on the show
+97:06
+I would love to keep this you know let's
+97:11
+let's do it again sometime like this was
+97:12
+seriously rewarding so my pleasure
+97:17
+[Music]
+97:18
+yeah this was fun
+97:20
+okay peace out folks 
